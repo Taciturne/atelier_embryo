@@ -1,0 +1,21 @@
+/*Normalize*/
+body, h1, h2, h3, p, div, ul, li, button {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+button:active, button:focus, button:hover { 
+	border: none;
+	outline: none;
+	/*Enlève l'effet "cliqué" sur le button*/
+}

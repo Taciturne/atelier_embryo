@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Exercices | Atelier-embryo</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="favicons/manifest.json">
+
+</head>
+<body>
+
+<header>
+
+	<div class="container">
+
+		<h1>Atelier-embryo <br>Partie 2</h1>
+
+	</div> <!-- end container -->
+
+</header>
+
+<main>
+
+	<div class="container">
+
+		<section class="exo exo_01">
+
+			<h2>Cibler un élément html par son ID, utiliser une variable booléenne pour changer sa couleur</h2>
+
+			<div class="center">
+
+				<button id="swap_color">Swap color</button>
+
+				<div id="square" class="color_green">un carré tout beau</div> <!-- Ne jamais laisser une balise <div> sans contenu -->
+
+			</div> <!-- end center -->
+
+			<h3>Tâche à réaliser</h3>
+			<p>Lorsqu'on <span class="bold">clique</span> sur le bouton, la <span class="bold">couleur</span> du carré doit <span class="bold">changer</span>. Il (le carré) doit pouvoir changer de couleur entre les deux à <span class="bold">chaque click</span>.</p>
+
+			<h3>Explications supplémentaires</h3>
+			<p>Nous disposons d'un bouton et d'un carré. Pour le moment, lorsqu'on clique sur le bouton <span class="bold">il ne se passe rien</span>. Le but est donc, en <span class="bold">javascript</span>, de réussir à <span class="bold">"écouter"</span> l'événement du click sur le bouton en premier lieu. Une fois cela réussi, vous devez réussir à <span class="bold">cibler</span> le carré en js par son ID (de la même manière que le bouton) et lui donner la condition suivante : lorsque la variable booléenne est <span class="bold">vrai</span>, <span class="bold">rajouter</span> la class <span class="bold">.color_green</span> et <span class="bold">retirer</span> la class <span class="bold">.color_blue</span>. Inversément, lorsque la variable booléenne est <span class="bold">fausse</span>, <span class="bold">rajouter</span> la class <span class="bold">.color_blue</span> et <span class="bold">retirer</span> la class <span class="bold">.color_green</span>.</p>
+
+			<h3>Ressources pour y parvenir</h3>
+			<p>Voici quelques ressources dont vous pourriez avoir besoin pour réaliser cet exercice :
+			<ul class="list">
+				<li class="list__el"><a href="http://www.w3schools.com/js/js_booleans.asp" target="_blank">les variables booléennes</a></li>
+				<li class="list__el"><a href="http://www.w3schools.com/js/js_if_else.asp" target="_blank">les conditions</a></li>
+				<li class="list__el"><a href="http://www.w3schools.com/jsref/met_document_getelementbyid.asp" target="_blank">cibler un élément html par son id</a></li>
+				<li class="list__el"><a href="https://developer.mozilla.org/fr/docs/Web/API/Document/getElementById" target="_blank">même chose en français</a></li>
+				<li class="list__el"><a href="https://developer.mozilla.org/fr/docs/Web/API/Element/classList" target="_blank">ajouter ou supprimer une class à un élément en français</a></li>
+				<li class="list__el"><a href="http://www.w3schools.com/jsref/prop_element_classlist.asp" target="_blank">même chose en anglais</a></li>
+				<li class="list__el"><a href="http://www.w3schools.com/jsref/met_element_addeventlistener.asp" target="_blank">écouter un événément en js</a></li>
+			</ul> <!-- end list -->
+
+		</section> <!-- end exo_01 -->
+
+	</div> <!-- end container -->
+
+</main>
+
+<footer>
+	<div class="container">
+		<p>Créé par <a href="http://charlieimmers.be/projets/">Charlie Immers</a> et <a href="http://jimmymorrens.be/">Jimmy Morrens</a></p>
+	</div> <!-- end container -->
+</footer>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>	
