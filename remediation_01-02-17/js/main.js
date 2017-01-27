@@ -23,3 +23,17 @@
 		};
 	});
 })();
+
+
+
+/*********************
+		EFFET PARALLAX
+**********************/
+
+window.addEventListener('scroll', function(){
+	var wScroll = window.scrollY;
+	if (wScroll <= document.getElementsByTagName('header')[0].clientHeight) {
+		document.getElementsByClassName("title")[0].style.transform = "translate(0px,"+wScroll/10+"%)"
+	}
+
+})

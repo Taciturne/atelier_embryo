@@ -1,3 +1,11 @@
+/*Tricks*/
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 /*Style*/
 html {
 	font-size: 20px; /*1em = 20px*/
@@ -8,16 +16,18 @@ body {
 	font-family: sans-serif;
 }
 header {
-	padding: 150px 0;
+	padding: 50px 0;
 	background-color: #F69D9D;
 
 	color: #FAFAFA;
 
 	text-align: center;
+	background: url(../img/bg.png) no-repeat center center fixed;
+	overflow: hidden;
 }
 footer {
-	padding: 25px 0;
-	background-color: #F69D9D;
+	padding: 5px 0;
+	background-color: #49a09d;
 }
 h1, h2 {
 	line-height: 150%;
@@ -26,8 +36,17 @@ h1 {
 	font-size: 3.5em;
 }
 h2 {
+	transform: translateX(-50px);
+	font-size: 4em;
+	color: #BBB;
+	opacity: .15;
+}
+h2 + p{
+	margin-top: -1.5em;
 	font-size: 2.1em;
 	margin-bottom: 3em;
+	line-height: 150%;
+	font-weight: bold;
 }
 h3 {
 	font-size: 1.6em;
@@ -76,6 +95,14 @@ a {
 	text-indent: -9999px; /*Déplace le contenu de la balise ciblée en dehors du site,
 	pour éviter de laisser une balise <div> vide. */
 }
+.title{
+	width: 41.66666666666%;
+	height: 400px;
+	background: url(../img/logo.png) no-repeat center center;
+	background-size: contain;
+	text-indent: -9999px;
+	margin: 0 auto;
+}
 .color_blue {
 	background-color: #253B6E;
 }
@@ -83,6 +110,7 @@ a {
 	background-color: #2AAF74;
 }
 .list {
+	margin-top: 1.3em;
 	margin-left: 5%;
 }
 .list__el {
@@ -93,9 +121,9 @@ a {
 	content: "";
 	display: inline-block;
 	position: absolute;
-	
+
 	top: 0;
-	left: 0;	
+	left: 0;
 }
 .list__el:before {
 	top: 0;
@@ -107,20 +135,48 @@ a {
 	border-top: 3px solid #2AAF74;
 	border-right: 3px solid #2AAF74;
 }
-a:after {
+.link:after {
 	height: 100%;
 	width: 0%;
 	z-index: -1;
 
 	transform: translate(-5px, 3px);
 
-	background-color: #000;
+	background-color: #333;
 	opacity: .8;
 
 	transition: all .2s ease;
+	opacity: .1;
 }
-a:hover:after {
+.link:hover:after {
 	width: 105%;
+
+}
+.auteur{
+	display: block;
+	width: 100px;
+	height: 100px;
+
+	margin: 100px auto 0;
+	position: relative;
+}
+.auteur img{
+	width: 100%;
+	border-radius: 50%;
+}
+.auteur:after,
+.auteur:before{
+	content: "";
+	width: 100%;
+	height: 2px;
+	background: #ccc;
+	position: absolute;
+	left: -150%;
+	top: 50%;
+}
+.auteur:after{
+	left: inherit;
+	right: -150%;
 }
 .bold {
 	font-weight: bold;
@@ -148,12 +204,14 @@ a:hover:after {
 	text-align: center;
 	margin-bottom: 5em;
 }
-footer p {
+footer small {
 	margin: 0;
+	float: right;
 }
 footer a {
 	color: #FAFAFA;
 }
 footer .container {
 	padding: 0;
+
 }
