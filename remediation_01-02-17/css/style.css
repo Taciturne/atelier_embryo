@@ -17,13 +17,13 @@ body {
 }
 header {
 	padding: 100px 0;
-	background-color: #F69D9D;
 
 	color: #FAFAFA;
   position: relative;
 
 	text-align: center;
 	background: url(../img/bg.png) no-repeat center center fixed;
+  background-size: cover;
 	overflow: hidden;
 }
 svg{
@@ -118,7 +118,7 @@ a {
 }
 .list {
 	margin-top: 1.3em;
-	margin-left: 5%;
+	margin-left: 3%;
 }
 .list__el {
 	position: relative;
@@ -134,7 +134,7 @@ a {
 }
 .list__el:before {
 	top: 0;
-	left: -40px;
+	left: -20px;
 	transform: translate(-50%, 50%) rotate(45deg);
 
 	height: 15px;
@@ -221,4 +221,18 @@ footer a {
 footer .container {
 	padding: 0;
 
+}
+@media (max-width:1000px) {
+  body{
+    font-size: 14px;
+  }
+  .container{
+    width: 90%;
+  }
+  .title{
+    width: 100%;
+  }
+  svg path{
+    width: 100%;
+  }
 }
