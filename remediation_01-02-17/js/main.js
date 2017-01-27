@@ -1,4 +1,4 @@
-(function Swap_color(){
+
 
 	var btn = document.getElementById("swap_color");
 	var square = document.getElementById("square");
@@ -22,7 +22,7 @@
 
 		};
 	});
-})();
+
 
 
 
@@ -33,7 +33,7 @@
 window.addEventListener('scroll', function(){
 	var wScroll = window.scrollY;
 	if (wScroll <= document.getElementsByTagName('header')[0].clientHeight) {
-		document.getElementsByClassName("title")[0].style.transform = "translate(0px,"+wScroll/10+"%)"
+		document.getElementsByClassName("title")[0].style.transform = "translate(0px,"+wScroll/10+"%)";
 	}
 
 })
@@ -44,16 +44,16 @@ window.addEventListener('scroll', function(){
 var path = document.querySelector("svg path"),
 		from = path.getAttribute("d"),
 		to = path.dataset["to"],
-		flag = true,
-		time = 1767;
-setInterval(function(){
+		flag = true;
+
+function animate(){
 	if(flag){
 		flag = false
 		dynamics.animate(path, {
 				d : to,
 		}, {
 			type: dynamics.easeOut,
-		  duration: time,
+		  duration: 6000,
 		  friction: 243
 		})
 	}
@@ -63,9 +63,9 @@ setInterval(function(){
 				d : from,
 		}, {
 			type: dynamics.easeOut,
-		  duration: time,
+		  duration: 6000,
 		  friction: 243
 		})
 	}
-
-},time*4)
+};
+setInterval(function(){animate()},6000)

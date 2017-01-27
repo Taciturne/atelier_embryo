@@ -16,13 +16,14 @@ body {
 	font-family: sans-serif;
 }
 header {
-	padding: 100px 0;
+	padding: 2% 0;
 
 	color: #FAFAFA;
   position: relative;
 
 	text-align: center;
-	background: url(../img/bg.png) no-repeat center center fixed;
+	background: url(../img/bg.png) no-repeat fixed;
+  background-position: center center;
   background-size: cover;
 	overflow: hidden;
 }
@@ -198,7 +199,7 @@ a {
 }
 .exo {
 	width: 100%;
-	margin-top: 6em;
+	margin-top: 1em;
 }
 .exo_01 {
 
