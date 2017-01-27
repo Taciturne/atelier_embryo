@@ -27,7 +27,7 @@
 
 
 /*********************
-		EFFET PARALLAX
+    EFFET PARALLAX
 **********************/
 
 window.addEventListener('scroll', function(){
@@ -37,3 +37,35 @@ window.addEventListener('scroll', function(){
 	}
 
 })
+
+/*********************
+    dynamics.JS
+**********************/
+var path = document.querySelector("svg path"),
+		from = path.getAttribute("d"),
+		to = path.dataset["to"],
+		flag = true,
+		time = 1767;
+setInterval(function(){
+	if(flag){
+		flag = false
+		dynamics.animate(path, {
+				d : to,
+		}, {
+			type: dynamics.easeOut,
+		  duration: time,
+		  friction: 243
+		})
+	}
+	else {
+		flag = true
+		dynamics.animate(path, {
+				d : from,
+		}, {
+			type: dynamics.easeOut,
+		  duration: time,
+		  friction: 243
+		})
+	}
+
+},time*4)

@@ -16,14 +16,21 @@ body {
 	font-family: sans-serif;
 }
 header {
-	padding: 50px 0;
+	padding: 100px 0;
 	background-color: #F69D9D;
 
 	color: #FAFAFA;
+  position: relative;
 
 	text-align: center;
 	background: url(../img/bg.png) no-repeat center center fixed;
 	overflow: hidden;
+}
+svg{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  fill:#fff;
 }
 footer {
 	padding: 5px 0;
@@ -154,8 +161,8 @@ a {
 }
 .auteur{
 	display: block;
-	width: 100px;
-	height: 100px;
+	width: 75px;
+	height: 75px;
 
 	margin: 100px auto 0;
 	position: relative;
