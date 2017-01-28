@@ -1,3 +1,6 @@
+window.addEventListener("load",function(){
+
+
 
 
 	var btn = document.getElementById("swap_color");
@@ -23,7 +26,9 @@
 		};
 	});
 
-
+function $(element){
+	return document.querySelector(element);
+};
 
 
 /*********************
@@ -69,3 +74,4 @@ function animate(){
 	}
 };
 setInterval(function(){animate()},6000)
+});
