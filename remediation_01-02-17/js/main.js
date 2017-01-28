@@ -39,6 +39,7 @@ window.addEventListener('scroll', function(){
 	var wScroll = window.scrollY;
 	if (wScroll <= document.getElementsByTagName('header')[0].clientHeight) {
 		document.getElementsByClassName("title")[0].style.transform = "translate(0px,"+wScroll/10+"%)";
+		document.getElementsByTagName("header")[0].style.backgroundPositionY = +wScroll*-1.5+"px";
 	}
 
 })
@@ -49,9 +50,12 @@ window.addEventListener('scroll', function(){
 var path = document.querySelector("svg path"),
 		from = path.getAttribute("d"),
 		to = path.dataset["to"],
+		n = 1,
 		flag = true;
 
+animate()
 function animate(){
+	n=6;
 	if(flag){
 		flag = false
 		dynamics.animate(path, {

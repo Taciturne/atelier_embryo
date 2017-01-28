@@ -23,7 +23,7 @@ header {
 
 	text-align: center;
 	background: url(../img/bg.png) no-repeat fixed;
-  background-position: center center;
+  background-position: center 0;
   background-size: cover;
 	overflow: hidden;
 }
@@ -235,5 +235,11 @@ footer .container {
   }
   svg path{
     width: 100%;
+  }
+  footer .container{
+    text-align: center;
+  }
+  footer small{
+    float: none;
   }
 }
