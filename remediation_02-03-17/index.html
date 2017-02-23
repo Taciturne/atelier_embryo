@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Cours 2 | Atelier-embryo</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="favicons/manifest.json">
+
+</head>
+<body>
+
+<header class="top">
+
+	<div class="container">
+
+		<h1 class="title">Atelier-embryo</h1>
+
+	</div> <!-- end container -->
+
+	<svg viewBox="0 0 1920 181" xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"width="100%" height="50px" preserveAspectRatio="none">
+	<path fill-rule="evenodd"
+	 d="M0.000,181.000 L0.000,20.000 L385.000,0.000 L721.000,89.000 L1046.000,11.000 L1428.000,91.000 L1727.000,7.000 L1920.000,21.000 L1920.000,181.000 L0.000,181.000 Z"
+	 data-to="M0.000,185.000 L0.000,24.000 L380.000,76.000 L711.000,5.000 L1054.000,89.000 L1410.000,-0.000 L1735.000,67.000 L1920.000,25.000 L1920.000,185.000 L0.000,185.000 Z"/>
+	</svg>
+
+</header>
+
+<main>
+
+	<div class="container">
+
+		<section class="exo exo_01">
+			<h2>Cours 3</h2>
+			<p>Utilisation de boucles : while, do while, for</p>
+
+			<h3>Tâche à réaliser</h3>
+			<h4>Difficulté : facile</h4>
+			<p>Créez un script contenant une <span class="bold">boucle while</span> qui permet à l'utilisateur de donner un <span class="bold">nombre plus grand que 10</span>, et tant que celui-ci n'est pas plus grand que 10 <span class="bold">redemandez un nombre.</span> Affichez ce nombre dans une <span class="bold">balise html.</span></p>
+
+			
+
+			<p id="number"></p>
+
+			<h3>Explications supplémentaires</h3>
+			<p>Étant donné qu'on va demander à l'utilisateur un nombre on utilisera <span class="bold">la commande prompt</span> pour enregistrer la valeur dans une <span class="bold">variable</span> qu'on nommera <span class="bold">"number".</span> Ensuite on utilisera une boucle <span class="bold">"while"</span> qui testera à chaque fois si "number" dépasse 10 ou non. Si elle est toujours <span class="bold">inférieure à 10</span>, on redemande à l'utilisateur un nombre. Si elle (la variable) est <span class="bold">supérieure à 10</span> alors inscrivez le nombre donné par l'utilisateur dans une <span class="bold">balise hmtl</span> ciblée par son ID.</p>
+
+			<h3>Les ressources pour y parvenir</h3>
+			<ul class="list">
+				<li class="list__el"><a class="link" href="http://www.w3schools.com/jsref/met_document_getelementbyid.asp" target="_blank">Cibler un élément html par son id</a></li>
+				<li class="list__el"><a class="link" href="https://www.w3schools.com/jsref/met_win_prompt.asp" target="_blank">Utilisation de la "fonction" prompt en js</a></li>
+				<li class="list__el"><a class="link" href="https://www.w3schools.com/js/js_loop_while.asp" target="_blank">Utilisation de while en js</a></li>
+				<li class="list__el"><a class="link" href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp" target="_blank">Remplacer le contenu d'une balise html par un autre en js</a></li>
+			</ul> <!-- end list -->
+		</section> <!-- end exo_01 -->
+
+		<section class="exo exo_02">
+			<h3>Tâche à réaliser</h3>
+			<h4>Difficulté : facile-intermédiaire</h4>
+			<p>Créez un script utilisant une <span class="bold">boucle while</span> contenant <span class="bold">une incrémentation.</span> La <span class="bold">console</span> du navigateur doit <span class="bold">afficher tous les nombres entre 20 et 30.</span></p>
+
+			<h3>Explications supplémentaires</h3>
+			<p>Même début que l'exercice précédent, on crée une <span class="bold">variable</span> contenant un nombre qui servira pour <span class="bold">l'incrémentation.</span> On crée une <span class="bold">boucle while</span> avec une <span class="bold">condition</span> permettant d'arrêter la fonction <span class="bold">lorsqu'on dépasse 30.</span></p>
+
+			<h3>Les ressources pour y parvenir</h3>
+			<ul class="list">
+				<li class="list__el"><a class="link" href="https://www.freecodecamp.com/challenges/increment-a-number-with-javascript" target="_blank">Incrémenter une variable</a></li>
+				<li class="list__el"><a class="link" href="https://www.w3schools.com/js/js_loop_while.asp" target="_blank">Utilisation de while en js</a></li>
+			</ul> <!-- end list -->
+		</section> <!-- end exo_02 -->
+
+		<section class="exo exo_03">
+			<h3>Tâche à réaliser</h3>
+			<h4>Difficulté : intermédiaire-difficile</h4>
+			<p>Créez un script utilisant une <span class="bold">boucle for</span>, contenant une <span class="bold">incrémentation</span> qui permet de demander à l'utilisateur <span class="bold">des prénoms.</span> Lorsque l'utilisateur n'a plus de prénom à donner, il n'inscrit rien dans l'invite de commande et appuie sur validé. Une fois tout cela réalisé, <span class="bold">affichez dans une alert</span> les prénoms donnés par l'utilisateur ainsi que leur <span class="bold">nombre.</span></p>
+
+			<h3>Explications supplémentaires</h3>
+			<p>On crée une <span class="bold">boucle for avec une incrémentation</span> et une <span class="bold">variable</span> qui contiendra <span class="bold">les prénoms.</span> On utilise l'incrémentation pour compter <span class="bold">le nombre de prénoms utilisés.</span> Utilisez <span class="bold">une condition</span> qui vérifie si la variable utilisée pour les prénoms <span class="bold">est bien remplie,</span> si oui <span class="bold">rajoutez</span> les prénoms précédents au dernier introduit. Si non, <span class="bold">arrêtez</span> la fonction et <span class="bold">affichez</span> dans <span class="bold">une fonction "alert"</span> le nombre de prénoms (avec la variable incrémentée) ainsi que les prénoms (grâce à la variable qui a enregistré les prénoms).</p>
+
+			<h3>Les ressources pour y parvenir</h3>
+			<ul class="list">
+				<li class="list__el"><a class="link" href="https://www.w3schools.com/js/js_loop_for.asp" target="_blank">Utilisation de boucle for en js</a></li>
+			</ul> <!-- end list -->
+		</section> <!-- end exo_03 -->
+
+		<a class="auteur" href="http://charlieimmers.be/projets/"><img src="img/charlie.jpg" alt="Photo de l'auteur (Charlie Immers)"></a>
+
+	</div> <!-- end container -->
+
+</main>
+
+<footer class="cf">
+	<div class="container">
+		<small>&copy; <a class="link" href="http://charlieimmers.be/projets/">Charlie Immers</a> et <a class="link" href="http://jimmymorrens.be/">Jimmy Morrens</a></small>
+	</div> <!-- end container -->
+</footer>
+
+<script type="text/javascript" src="js/dynamics.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
